@@ -1,0 +1,19 @@
+<h2>pokemon ID:  <%= @pokemon.id %></h2>
+
+<h3>Name: <%= @pokemon.name %> </h3>
+
+<h3>Image URL: <%= @pokemon.img_url %> </h3>
+
+<h3>Pokemon Type: <%= @pokemon.poke_type %> </h3>
+
+<h3>CP: <%= @pokemon.cp %> </h3>
+<br>
+<br>
+  <button>
+    <a href='/pokemons/<%= @pokemon.id %>/edit'>EDIT this Pokemon</a>
+  </button>
+  <br>
+  <br>
+  <button>
+    <a href="/pokemons">RETURN to Pokemons</a>
+  </button>
