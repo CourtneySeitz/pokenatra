@@ -1,8 +1,12 @@
-require 'active_record'
-require 'ffaker'
-require 'pg'
-require_relative 'connection'
-require_relative '../models/pokemon'
+require "bundler/setup"
+require "active_record"
+require "pg"
+require "pry"
+
+require_relative "connection"
+require_relative "../models/pokemon"
+
+
 
 Pokemon.destroy_all
 Pokemon.create(name: "Charmander", cp: rand(800), poke_type: "fire", img_url: "https://img.pokemondb.net/artwork/charmander.jpg")
